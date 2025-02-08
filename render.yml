@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: speech-app
+    dockerfile: Dockerfile
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 8080
+    runtime:
+      type: python
+      version: 3.10
+    env-file:
+      - .env
+    resources:
+      memory: 4G
+      cpu: 2
+    healthCheck:
+      path: /health
