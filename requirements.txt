@@ -1,0 +1,13 @@
+fastapi[all]
+uvicorn[all]
+torch
+librosa
+pydub
+orjson
+transformers
+base64c
+openai
+boto3
+base64c
+
+TTS @ git+https://github.com/obahamonde/XTTS.git
